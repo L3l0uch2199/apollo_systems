@@ -18,9 +18,17 @@ export default defineNuxtConfig({
 		optimizeDeps: {
 			include: ['graphql-tag'],
 		},
-		plugins: [vuetify()],
+		plugins: [
+			vuetify({
+				// This is the correct way to configure Vuetify with vite-plugin-vuetify
+			}),
+		],
 	},
 
-	modules: ['@nuxtjs/apollo', ['@pinia/nuxt', { autoImports: ['defineStore', 'acceptHMRUpdate'] }]],
+	modules: [
+		'@nuxtjs/apollo',
+		['@pinia/nuxt', { autoImports: ['defineStore', 'acceptHMRUpdate'] }],
+		// We don't need @vuetify/nuxt because vite-plugin-vuetify handles it
+	],
 	compatibilityDate: '2024-11-11',
 })
