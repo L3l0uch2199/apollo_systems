@@ -143,7 +143,6 @@ const isLinkHovered = ref(false)
 	width: 100%;
 }
 
-/* Typography adjustments */
 .text-h5 {
 	font-size: 1.5rem !important;
 	line-height: 1.4 !important;
@@ -154,7 +153,6 @@ const isLinkHovered = ref(false)
 	font-size: 0.8125rem !important;
 }
 
-/* Minimal design adjustments */
 .v-card-title {
 	padding-bottom: 16px;
 }
@@ -163,7 +161,6 @@ const isLinkHovered = ref(false)
 	padding-top: 0;
 }
 
-/* Ensure consistent spacing */
 .mb-4 {
 	margin-bottom: 1rem !important;
 }
